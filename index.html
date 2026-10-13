@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3ec">
+  <meta name="description" content="Join Zinal and Nisha as they celebrate their wedding reception on 15 November 2026 in Areekode, Kerala.">
+  <title>Zinal & Nisha | Save the Date</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--paper:#f7f3ec;--ink:#211f1d;--muted:#716b63;--gold:#a88a5b;--line:#d8cdbd}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:76px}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Montserrat,Arial,sans-serif;font-weight:300}
+    a{color:inherit}
+    .nav{position:sticky;top:0;z-index:10;display:flex;justify-content:center;gap:clamp(14px,4vw,42px);padding:17px 12px;background:rgba(247,243,236,.94);backdrop-filter:blur(12px);border-bottom:1px solid #e6ded2}
+    .nav a{text-decoration:none;text-transform:uppercase;letter-spacing:.15em;font-size:10px}
+    .nav a:hover{color:var(--gold)}
+    .hero{min-height:calc(100svh - 52px);display:grid;place-items:center;padding:44px 18px;background:linear-gradient(#211f1d22,#211f1d55),url('assets/cover.jpg') center/cover no-repeat,#d4d0c9}
+    .invitation{width:min(680px,100%);padding:clamp(25px,6vw,64px) clamp(20px,6vw,58px);text-align:center;background:rgba(250,247,241,.94);border:1px solid #fff9;box-shadow:0 20px 70px #0002}
+    .eyebrow{font-size:10px;letter-spacing:.34em;text-transform:uppercase}
+    h1{font-family:"Cormorant Garamond",serif;font-size:clamp(43px,9vw,82px);font-weight:400;line-height:.95;margin:20px 0 10px}
+    .script{font-family:"Great Vibes",cursive;font-size:clamp(46px,10vw,83px);line-height:1.2;color:#302923}
+    .hero-photo-note{font-size:10px;letter-spacing:.12em;color:var(--muted);margin:18px 0 0}
+    .ornament{display:flex;align-items:center;gap:14px;justify-content:center;color:var(--gold);margin:20px auto}
+    .ornament:before,.ornament:after{content:"";height:1px;width:55px;background:var(--line)}
+    .date-line{font-family:"Cormorant Garamond",serif;font-size:clamp(20px,4vw,27px);letter-spacing:.06em}
+    .subline{font-size:11px;line-height:1.9;letter-spacing:.08em;margin-top:10px}
+    .button{display:inline-block;margin-top:25px;padding:13px 20px;border:1px solid var(--gold);text-decoration:none;font-size:10px;letter-spacing:.17em;text-transform:uppercase;transition:.2s}
+    .button:hover{background:var(--ink);border-color:var(--ink);color:white}
+    section{padding:90px 20px}
+    .section-inner{width:min(1000px,100%);margin:auto}
+    .section-kicker{text-align:center;text-transform:uppercase;letter-spacing:.28em;font-size:10px;color:var(--gold)}
+    h2{text-align:center;font:400 clamp(38px,7vw,60px)/1.05 "Cormorant Garamond",serif;margin:13px 0 20px}
+    .intro{text-align:center;max-width:580px;margin:0 auto 38px;line-height:1.9;font-size:13px;color:var(--muted)}
+    #details{background:#eee7dc}
+    .details-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}
+    .detail-card{background:var(--paper);padding:30px;text-align:center;border:1px solid #e4d9c9}
+    .detail-label{text-transform:uppercase;font-size:10px;letter-spacing:.2em;color:var(--gold)}
+    .detail-value{font:400 27px "Cormorant Garamond",serif;margin:13px 0}
+    .detail-small{font-size:12px;line-height:1.8;color:var(--muted)}
+    .countdown{display:flex;justify-content:center;gap:clamp(12px,4vw,35px);margin:35px 0 0}
+    .countdown div{text-align:center;min-width:48px}
+    .countdown strong{display:block;font:400 clamp(28px,5vw,42px) "Cormorant Garamond",serif}
+    .countdown span{font-size:9px;text-transform:uppercase;letter-spacing:.15em;color:var(--muted)}
+    .venue-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:24px}
+    .qr-wrap{margin:30px auto 0;text-align:center}
+    .qr-wrap img{width:150px;height:150px;padding:8px;background:white;border:1px solid var(--line)}
+    .qr-caption{font-size:10px;letter-spacing:.1em;color:var(--muted);margin-top:10px}
+    #memories{background:var(--paper)}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+    .gallery figure{margin:0;aspect-ratio:4/5;overflow:hidden;background:#e2dbd0;position:relative}
+    .gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+    .gallery figure:hover img{transform:scale(1.04)}
+    .gallery .caption{position:absolute;bottom:0;left:0;right:0;padding:22px 10px 12px;background:linear-gradient(transparent,#0008);color:#fff;font:italic 19px "Cormorant Garamond",serif}
+    .gallery-note{text-align:center;font-size:11px;color:var(--muted);line-height:1.8;margin-top:20px}
+    .closing{text-align:center;padding:68px 20px 75px;background:#25221f;color:var(--paper)}
+    .closing .script{color:#e7d7bd}
+    .closing p{font-size:11px;letter-spacing:.1em;line-height:2}
+    footer{text-align:center;padding:18px;font-size:9px;letter-spacing:.1em;color:var(--muted)}
+    @media(max-width:650px){.details-grid{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.gallery figure:last-child{grid-column:span 2;aspect-ratio:5/3}.nav{gap:16px}.nav a{font-size:9px;letter-spacing:.1em}section{padding:68px 16px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="#home">Invitation</a><a href="#details">The Details</a><a href="#memories">Our Memories</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="home" aria-label="Wedding invitation">
+      <div class="invitation">
+        <div class="eyebrow">With love and the blessings of our families</div>
+        <h1>Save <span style="font-style:italic;font-size:.62em">the</span> Date</h1>
+        <div class="ornament">✦</div>
+        <div class="script">Zinal &amp; Nisha</div>
+        <p class="date-line">15 November 2026 · 6:00 PM</p>
+        <p class="subline">WEDDING RECEPTION<br>SAGAR AVENUE · EAST VADAKKUMMURI<br>AREEKODE, KERALA</p>
+        <a class="button" href="#details">Join our celebration ↓</a>
+        <p class="hero-photo-note">A LITTLE CELEBRATION OF A LOT OF LOVE</p>
+      </div>
+    </section>
+
+    <section id="details">
+      <div class="section-inner">
+        <div class="section-kicker">The day we've been waiting for</div>
+        <h2>Join Our Celebration</h2>
+        <p class="intro">Together with our families, we would be delighted to have you with us as we celebrate this special chapter of our story.</p>
+        <div class="details-grid">
+          <div class="detail-card">
+            <div class="detail-label">Date &amp; Time</div>
+            <div class="detail-value">Sunday, 15 November 2026</div>
+            <div class="detail-small">The reception programme begins at<br><strong>6:00 PM</strong></div>
+            <div class="countdown" aria-label="Countdown to reception">
+              <div><strong id="days">--</strong><span>Days</span></div>
+              <div><strong id="hours">--</strong><span>Hours</span></div>
+              <div><strong id="minutes">--</strong><span>Minutes</span></div>
+              <div><strong id="seconds">--</strong><span>Seconds</span></div>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-label">The Venue</div>
+            <div class="detail-value">Sagar Avenue</div>
+            <div class="detail-small">East Vadakkummuri, Areekode<br>Kerala 673639, India</div>
+            <div class="venue-actions">
+              <a class="button" href="https://maps.app.goo.gl/LmfxdS4h6nyghChRA" target="_blank" rel="noopener">Get Directions ↗</a>
+            </div>
+            <div class="qr-wrap">
+              <img id="mapQr" alt="QR code to open the wedding venue in Google Maps">
+              <div class="qr-caption">SCAN TO OPEN LOCATION</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="memories">
+      <div class="section-inner">
+        <div class="section-kicker">Little moments, a lifetime of memories</div>
+        <h2>Our Story in Photos</h2>
+        <p class="intro">Every picture holds a memory. Here are a few favourite moments from our journey together.</p>
+        <div class="gallery" id="gallery">
+          <figure><img src="assets/memory-1.jpg" alt="Zinal and Nisha memory 1" loading="lazy"><figcaption class="caption">The beginning</figcaption></figure>
+          <figure><img src="assets/memory-2.jpg" alt="Zinal and Nisha memory 2" loading="lazy"><figcaption class="caption">Favourite days</figcaption></figure>
+          <figure><img src="assets/memory-3.jpg" alt="Zinal and Nisha memory 3" loading="lazy"><figcaption class="caption">Always us</figcaption></figure>
+        </div>
+        <p class="gallery-note">Personalise this gallery by uploading your photos into the <strong>assets</strong> folder in your GitHub repository.<br>Use the filenames <strong>memory-1.jpg</strong>, <strong>memory-2.jpg</strong> and <strong>memory-3.jpg</strong>, or update the image paths in index.html.</p>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="eyebrow">With love,</div>
+      <div class="script">Zinal &amp; Nisha</div>
+      <p>WE CAN'T WAIT TO CELEBRATE WITH YOU<br>15 · 11 · 2026</p>
+    </section>
+  </main>
+  <footer>MADE WITH LOVE · ZINAL &amp; NISHA · 2026</footer>
+
+  <script>
+    // QR code points to the Google Maps location link supplied by the couple.
+    const mapLink = "https://maps.app.goo.gl/LmfxdS4h6nyghChRA";
+    document.getElementById("mapQr").src =
+      "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=" + encodeURIComponent(mapLink);
+
+    // Reception time in Kerala, India (IST, UTC+05:30).
+    const eventTime = new Date("2026-11-15T18:00:00+05:30").getTime();
+    function updateCountdown(){
+      let distance = Math.max(0, eventTime - Date.now());
+      const values = {
+        days: Math.floor(distance / 86400000),
+        hours: Math.floor((distance % 86400000) / 3600000),
+        minutes: Math.floor((distance % 3600000) / 60000),
+        seconds: Math.floor((distance % 60000) / 1000)
+      };
+      Object.entries(values).forEach(([id,value]) => {
+        document.getElementById(id).textContent = String(value).padStart(2,"0");
+      });
+    }
+    updateCountdown();
+    setInterval(updateCountdown,1000);
+
+    // If a photo file is not uploaded yet, show a friendly neutral placeholder.
+    document.querySelectorAll(".gallery img").forEach(img => {
+      img.addEventListener("error", () => {
+        img.style.display = "none";
+        img.parentElement.style.background = "linear-gradient(145deg,#d7cbbb,#eee7dc)";
+        img.parentElement.style.display = "grid";
+        img.parentElement.style.placeItems = "center";
+        const label = document.createElement("span");
+        label.textContent = "Add your photo";
+        label.style.cssText = "font:italic 22px 'Cormorant Garamond',serif;color:#716b63";
+        img.parentElement.appendChild(label);
+      }, {once:true});
+    });
+  </script>
+</body>
+</html>
